@@ -42,4 +42,5 @@ nav a:hover {
 nav a.active {
   background-color: var(--cyan);
   color: var(--black);
+  font-weight: 600;
 }
