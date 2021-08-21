@@ -72,7 +72,7 @@ nav a.active {
 }
 
 .section2 {
-  background-color: var(--darkcyan);
+  background-color: var(--cyan);
 }
 
 .section1>.title, .section1>.content {
@@ -97,7 +97,7 @@ nav a.active {
 }
 .virus {
   float:left;
-  margin: -35px 0 -5px 0;
+  margin: -3.7rem 0 -5px 0;
   padding: 5px 30px;
   border-radius: 15%;
 }
