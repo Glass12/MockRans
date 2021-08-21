@@ -1,3 +1,5 @@
+/* This Section of CSS is for general styles that can be applied to everything */
+
 :root {
   font-size: 20px;
   font-family: "Nunito", sans-serif;
@@ -18,6 +20,23 @@
 body {
   background-color: var(--lightgray);
 }
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cyan);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--black);  /* creates padding around scroll thumb */
+}
+
 
 /* Everything Below this until You reach the next comment will
   Be the CSS for the Navbar */
@@ -118,3 +137,24 @@ nav a.active {
   border-radius: 15%;
 }
 
+/* Download Button */
+.download {
+  background:    #0b0c10;
+  background:    linear-gradient(#0b0c10, #1f2833);
+  border-radius: 11px;
+  box-shadow:    10px 10px 10px #1f2833;
+  padding:       30px 75px;
+  color:         #66fcf1;
+  display:       inline-block;
+  font:          normal bold 36px/1 "Nunito", sans-serif;
+  text-align:    center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.download-link {
+  color: #66fcf1;
+  text-decoration: none;
+}
