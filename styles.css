@@ -52,6 +52,12 @@ nav a.active {
 
 /* CSS For Main Content */
 
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .section {
   margin: 20px 10px;
   padding: 20px;
@@ -64,8 +70,16 @@ nav a.active {
   background-color: #1f2833;
 }
 
-.title, .content {
+.section2 {
+  background-color: var(--darkcyan);
+}
+
+.section1>.title, .section1>.content {
   color: var(--cyan)
+}
+
+.section2>.title, .section2>.content {
+  color: var(--black)
 }
 
 .content {
