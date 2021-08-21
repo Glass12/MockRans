@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
+  
 
   <title>Download</title>
 </head>
@@ -23,11 +24,20 @@
 
 	</nav>
 
-  <button class="download">
-    <a href="info.txt" download="friendly-file" class="download-link">
-      Download
-    </a>
-  </button>
+  <button data-modal-target="#modal" class="download">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Example Modal</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+      <input type="checkbox">
+      <button type="submit"></button>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
