@@ -105,3 +105,16 @@ nav a.active {
 .main>h1 {
   font-size: 2.5em;
 }
+
+.norton, .mcafee {
+  width: 10%;
+  min-width: 200px;
+}
+
+.norton {
+  float: left;
+  margin: -5vw 5px -5px 5px;
+  padding: 50px 30px 20px;
+  border-radius: 15%;
+}
+
