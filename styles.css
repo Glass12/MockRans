@@ -1,0 +1,120 @@
+:root {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+
+  --black: #0b0c10;
+  --gray: #1f2833;
+  --lightgray: #c5c6c7;
+  --cyan: #66fcf1;
+  --darkcyan: #45a29e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--lightgray);
+}
+
+/* Everything Below this until You reach the next comment will
+  Be the CSS for the Navbar */
+
+nav {
+  overflow: hidden;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: var(--cyan);
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: var(--darkcyan);
+  color: #fff;
+}
+
+nav a.active {
+  background-color: var(--cyan);
+  color: var(--black);
+  font-weight: 600;
+}
+
+
+/* CSS For Main Content */
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section {
+  margin: 20px 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 4px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.section1 {
+
+  background-color: #1f2833;
+}
+
+.section2 {
+  background-color: var(--cyan);
+}
+
+.section1>.title, .section1>.content {
+  color: var(--cyan)
+}
+
+.section2>.title, .section2>.content {
+  color: var(--black)
+}
+
+.content {
+  margin: 10px;
+  padding: 15px;
+}
+
+.main {
+  height: calc(49em - 30vw);
+}
+
+.title {
+  text-align: center;
+}
+.virus {
+  float:left;
+  margin: -3.7rem 0 -5px 0;
+  padding: 5px 30px;
+  border-radius: 15%;
+}
+
+.main>h1 {
+  font-size: 2.5em;
+}
+
+.norton, .mcafee {
+  width: 10%;
+  min-width: 200px;
+}
+
+.norton {
+  float: left;
+  margin: -5vw 5px -5px 5px;
+  padding: 50px 30px 20px;
+  border-radius: 15%;
+}
+
