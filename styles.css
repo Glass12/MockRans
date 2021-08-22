@@ -1,3 +1,5 @@
+/* This Section of CSS is for general styles that can be applied to everything */
+
 :root {
   font-size: 20px;
   font-family: "Nunito", sans-serif;
@@ -15,9 +17,30 @@
   box-sizing: border-box;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--lightgray);
 }
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+  width: 14px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--cyan);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--black);  /* creates padding around scroll thumb */
+}
+
 
 /* Everything Below this until You reach the next comment will
   Be the CSS for the Navbar */
@@ -118,3 +141,91 @@ nav a.active {
   border-radius: 15%;
 }
 
+/* Download Button */
+.download {
+  background:    #0b0c10;
+  background:    linear-gradient(#0b0c10, #1f2833);
+  border-radius: 11px;
+  box-shadow:    10px 10px 10px #1f2833;
+  padding:       30px 75px;
+  color:         #66fcf1;
+  display:       inline-block;
+  font:          normal bold 36px/1 "Nunito", sans-serif;
+  text-align:    center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.download-link {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+/* Pop Up CSS */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#radio {
+  padding-right: 10px;
+}

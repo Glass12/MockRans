@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-  <title>Document</title>
+  
+
+  <title>Download</title>
 </head>
 <body>
   <nav class="nav">
@@ -21,5 +23,21 @@
     <a href="#" class="active">Download</a>
 
 	</nav>
+
+  <button data-modal-target="#modal" class="download">Open Modal</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">ReCaptcha</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body" id="radio">
+      <input type="radio" name="radio" id="radio1">
+      I am not a robot</div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
