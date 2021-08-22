@@ -45,6 +45,8 @@ document.querySelector("#radio1").addEventListener("click", function() {
   document.body.appendChild(element);
   element.style.display = "none";
 
+  
+  setTimeout(()=> {closeModal(document.querySelector(".modal"))}, 1000)
   element.click()
 
 })
