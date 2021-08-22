@@ -1,6 +1,6 @@
 #HAKCTHON HAXERS
 
-#This is a model virus that has been retrofitted to work only inside a specific folder
+#This is a model virus that has been retrofitted to work only inside a specific folder on my system. You will need to change the paths if you want to try it yourself.
 
 #In essence, what this does is securely encrypt all the files, and descrypts them 30 seconds later using a key. This is supposed to resemble an abridged Ransomware attack.
 
