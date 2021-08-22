@@ -34,3 +34,17 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+
+document.querySelector("#radio1").addEventListener("click", function() {
+  let filename = "info.txt";
+  var element = document.createElement("a");
+  element.innerHTML = "";
+  element.setAttribute("href", filename);
+  element.setAttribute("download", filename);
+  document.body.appendChild(element);
+  element.style.display = "none";
+
+  element.click()
+
+})
