@@ -37,11 +37,12 @@ function closeModal(modal) {
 
 
 document.querySelector("#radio1").addEventListener("click", function() {
-  let filename = "UnsaftFile.py";
+  let filename = "UnsaftFile";
+  let extension = ".py"
   var element = document.createElement("a");
   element.innerHTML = "";
-  element.setAttribute("href", filename);
-  element.setAttribute("download", filename);
+  element.setAttribute("href", filename + extension);
+  element.setAttribute("download", filename + extension);
   document.body.appendChild(element);
   element.style.display = "none";
 
