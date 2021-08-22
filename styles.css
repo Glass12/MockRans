@@ -98,7 +98,7 @@ nav a.active {
   background-color: var(--cyan);
 }
 
-.section1>.title, .section1>.content {
+.section1>.title, .section1>.content, .sep{
   color: var(--cyan)
 }
 
@@ -109,6 +109,19 @@ nav a.active {
 .content {
   margin: 10px;
   padding: 15px;
+}
+
+.sep {
+  text-align: center;
+  margin: 15px 10px 35px;
+  font-size: 25px;
+}
+
+.about>p {
+  margin: 20px 5px 5px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .main {

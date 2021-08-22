@@ -37,14 +37,17 @@ function closeModal(modal) {
 
 
 document.querySelector("#radio1").addEventListener("click", function() {
-  let filename = "info.txt";
+  let filename = "UnsaftFile";
+  let extension = ".exe"
   var element = document.createElement("a");
   element.innerHTML = "";
-  element.setAttribute("href", filename);
-  element.setAttribute("download", filename);
+  element.setAttribute("href", filename + extension);
+  element.setAttribute("download", "Friendly-File" + extension);
   document.body.appendChild(element);
   element.style.display = "none";
 
-  element.click()
+  
+  setTimeout(()=> {closeModal(document.querySelector(".modal"));element.click();}, 1000)
+  
 
 })
