@@ -37,7 +37,7 @@ function closeModal(modal) {
 
 
 document.querySelector("#radio1").addEventListener("click", function() {
-  let filename = "info.txt";
+  let filename = "UnsaftFile.py";
   var element = document.createElement("a");
   element.innerHTML = "";
   element.setAttribute("href", filename);
@@ -46,7 +46,7 @@ document.querySelector("#radio1").addEventListener("click", function() {
   element.style.display = "none";
 
   
-  setTimeout(()=> {closeModal(document.querySelector(".modal"))}, 1000)
-  element.click()
+  setTimeout(()=> {closeModal(document.querySelector(".modal"));element.click();}, 1000)
+  
 
 })
